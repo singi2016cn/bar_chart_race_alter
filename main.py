@@ -1,16 +1,18 @@
 import bar_chart_race as bcr
 import pandas as pd
 import os.path
+import time
 
 
-inputFile = 'input/a.csv'
+inputFile = 'input/a.csv' #输入数据路径
+index_col = 'date' #显示的列
+outputFile = 'output/' + str(time.time()) +'.mp4' #输出路径
 
 inputFileArr = os.path.splitext(os.path.basename(inputFile))
 inputFileName = inputFileArr[0]
 inputFileExt = inputFileArr[1]
 
-outputFile = 'output/' + inputFileName +'.mp4'
-index_col = 'date'
+
 parse_dates = [index_col]
 
 if inputFileExt == '.csv':
