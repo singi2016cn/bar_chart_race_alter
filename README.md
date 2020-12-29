@@ -1,5 +1,7 @@
 # 动态条形图 bar_chart_race
 
+更改自 bar_chart_race
+
 ## 参考 reference
 
 - [bar_chart_race](https://github.com/dexplo/bar_chart_race)
